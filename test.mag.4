@@ -1,0 +1,159 @@
+#K IRAF       = NOAO/IRAFV2.16.1        version    %-23s     
+#K USER       = avinash                 name       %-23s     
+#K HOST       = avinash.localdomain     computer   %-23s     
+#K DATE       = 2016-07-22              yyyy-mm-dd %-23s     
+#K TIME       = 19:24:16                hh:mm:ss   %-23s     
+#K PACKAGE    = apphot                  name       %-23s     
+#K TASK       = phot                    name       %-23s     
+#
+#K SCALE      = 1.                      units      %-23.7g   
+#K FWHMPSF    = 5.6                     scaleunit  %-23.7g   
+#K EMISSION   = yes                     switch     %-23b     
+#K DATAMIN    = INDEF                   counts     %-23.7g   
+#K DATAMAX    = INDEF                   counts     %-23.7g   
+#K EXPOSURE   = EXPTIME                 keyword    %-23s     
+#K AIRMASS    = AIRMASS                 keyword    %-23s     
+#K FILTER     = FILTER                  keyword    %-23s     
+#K OBSTIME    = UT                      keyword    %-23s     
+#
+#K NOISE      = poisson                 model      %-23s     
+#K SIGMA      = INDEF                   counts     %-23.7g   
+#K GAIN       = ""                      keyword    %-23s     
+#K EPADU      = 1.22                    e-/adu     %-23.7g   
+#K CCDREAD    = ""                      keyword    %-23s     
+#K READNOISE  = 4.87                    e-         %-23.7g   
+#
+#K CALGORITHM = centroid                algorithm  %-23s     
+#K CBOXWIDTH  = 5.                      scaleunit  %-23.7g   
+#K CTHRESHOLD = 0.                      sigma      %-23.7g   
+#K MINSNRATIO = 1.                      number     %-23.7g   
+#K CMAXITER   = 10                      number     %-23d     
+#K MAXSHIFT   = 1.                      scaleunit  %-23.7g   
+#K CLEAN      = no                      switch     %-23b     
+#K RCLEAN     = 1.                      scaleunit  %-23.7g   
+#K RCLIP      = 2.                      scaleunit  %-23.7g   
+#K KCLEAN     = 3.                      sigma      %-23.7g   
+#
+#K SALGORITHM = mode                    algorithm  %-23s     
+#K ANNULUS    = 28.                     scaleunit  %-23.7g   
+#K DANNULUS   = 3.                      scaleunit  %-23.7g   
+#K SKYVALUE   = 0.                      counts     %-23.7g   
+#K KHIST      = 3.                      sigma      %-23.7g   
+#K BINSIZE    = 0.1                     sigma      %-23.7g   
+#K SMOOTH     = no                      switch     %-23b     
+#K SMAXITER   = 10                      number     %-23d     
+#K SLOCLIP    = 0.                      percent    %-23.7g   
+#K SHICLIP    = 0.                      percent    %-23.7g   
+#K SNREJECT   = 50                      number     %-23d     
+#K SLOREJECT  = 3.                      sigma      %-23.7g   
+#K SHIREJECT  = 3.                      sigma      %-23.7g   
+#K RGROW      = 0.                      scaleunit  %-23.7g   
+#
+#K WEIGHTING  = constant                model      %-23s     
+#K APERTURES  = 5.6,22.4                scaleunit  %-23s     
+#K ZMAG       = 25.                     zeropoint  %-23.7g   
+#
+#N IMAGE               XINIT     YINIT     ID    COORDS                 LID    \
+#U imagename           pixels    pixels    ##    filename               ##     \
+#F %-23s               %-10.3f   %-10.3f   %-6d  %-23s                  %-6d    
+#
+#N XCENTER    YCENTER    XSHIFT  YSHIFT  XERR    YERR            CIER CERROR   \
+#U pixels     pixels     pixels  pixels  pixels  pixels          ##   cerrors  \
+#F %-14.3f    %-11.3f    %-8.3f  %-8.3f  %-8.3f  %-15.3f         %-5d %-9s      
+#
+#N MSKY           STDEV          SSKEW          NSKY   NSREJ     SIER SERROR   \
+#U counts         counts         counts         npix   npix      ##   serrors  \
+#F %-18.7g        %-15.7g        %-15.7g        %-7d   %-9d      %-5d %-9s      
+#
+#N ITIME          XAIRMASS       IFILTER                OTIME                  \
+#U timeunit       number         name                   timeunit               \
+#F %-18.7g        %-15.7g        %-23s                  %-23s                   
+#
+#N RAPERT   SUM           AREA       FLUX          MAG    MERR   PIER PERROR   \
+#U scale    counts        pixels     counts        mag    mag    ##   perrors  \
+#F %-12.2f  %-14.7g       %-11.7g    %-14.7g       %-7.3f %-6.3f %-5d %-9s      
+#
+aug02_afbs_ASASSN14dq-v1867.780  1582.760  1     stars.coo              1      \
+   1868.198   1582.734   0.418   -0.026  0.006   0.006          0    NoError   \
+   124.58         8.32909        -2.535421      551    1        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     195034.       98.75551   182731.1      17.043 0.002 0    NoError  *\
+   22.40    442595.2      1576.675   246173.       16.720 0.003 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1490.170  923.060   2     stars.coo              2      \
+   1490.288   923.243    0.118   0.183   0.006   0.006          0    NoError   \
+   126.3617       5.765626       2.974923       552    3        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     180853.9      98.80914   168368.2      17.132 0.002 0    NoError  *\
+   22.40    424533.4      1576.591   225312.6      16.816 0.003 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1261.430  1855.230  3     stars.coo              3      \
+   1261.841   1855.117   0.411   -0.113  0.011   0.010          0    NoError   \
+   121.6643       6.429439       2.513814       557    2        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     78040.56      98.87733   66010.72      18.149 0.004 0    NoError  *\
+   22.40    281283.3      1576.636   89463.12      17.819 0.007 0    NoError  * 
+aug02_afbs_ASASSN14dq-v343.860   1376.630  4     stars.coo              4      \
+   344.001    1376.791   0.141   0.161   0.006   0.005          0    NoError   \
+   129.0971       10.50892       5.088032       546    8        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     267356.1      98.85141   254594.7      16.683 0.002 0    NoError  *\
+   22.40    547518.9      1576.554   343990.4      16.357 0.003 0    NoError  * 
+aug02_afbs_ASASSN14dq-v604.010   1066.780  5     stars.coo              5      \
+   604.167    1067.144   0.157   0.364   0.007   0.007          0    NoError   \
+   130.9731       10.18739       2.921113       552    3        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     157784.9      98.81386   144842.9      17.296 0.003 0    NoError  *\
+   22.40    402238.1      1576.609   195744.7      16.969 0.005 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1922.610  807.950   6     stars.coo              6      \
+   1922.719   808.049    0.109   0.099   0.009   0.009          0    NoError   \
+   123.7526       9.101811       3.269455       555    3        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     82949.62      98.67987   70737.73      18.074 0.004 0    NoError  *\
+   22.40    290082.5      1576.539   94981.71      17.754 0.009 0    NoError  * 
+aug02_afbs_ASASSN14dq-v623.080   1639.660  7     stars.coo              7      \
+   623.393    1639.710   0.313   0.050   0.002   0.003          0    NoError   \
+   144.9941       11.36062       -5.732284      551    4        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     857915.3      98.89774   843575.7      15.383 0.001 0    NoError  *\
+   22.40    1365198.      1576.591   1136602.      15.059 0.001 0    NoError  * 
+aug02_afbs_ASASSN14dq-v785.140   967.410   8     stars.coo              8      \
+   785.231    967.494    0.091   0.084   0.003   0.002          0    NoError   \
+   142.1215       8.253189       -4.365409      557    2        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     811408.6      98.83816   797361.6      15.444 0.001 0    NoError  *\
+   22.40    1289321.      1576.463   1065272.      15.129 0.001 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1055.430  716.080   9     stars.coo              9      \
+   1055.582   716.115    0.152   0.035   0.003   0.004          0    NoError   \
+   132.856        6.786133       3.293114       559    3        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     443756.9      98.56737   430661.7      16.113 0.002 0    NoError  *\
+   22.40    780528.5      1576.409   571093.1      15.806 0.002 0    NoError  * 
+aug02_afbs_ASASSN14dq-v960.380   171.370   10    stars.coo              10     \
+   960.479    171.483    0.099   0.113   0.003   0.003          0    NoError   \
+   138.8038       7.215441       1.018652       530    14       0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     627625.9      99.0885    613872.       15.728 0.001 0    NoError  *\
+   22.40    1038526.      1576.87    819650.6      15.414 0.001 0    NoError  * 
+aug02_afbs_ASASSN14dq-v627.040   324.390   11    stars.coo              11     \
+   627.317    324.499    0.277   0.109   0.007   0.005          0    NoError   \
+   126.2098       6.513409       1.925371       552    4        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     146523.9      98.98621   134030.9      17.380 0.003 0    NoError  *\
+   22.40    379485.5      1576.689   180491.9      17.057 0.004 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1797.770  417.360   12    stars.coo              12     \
+   1798.286   417.477    0.516   0.117   0.006   0.004          0    NoError   \
+   137.7668       7.880916       -4.682624      556    2        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     212638.7      98.94716   199007.1      16.951 0.002 0    NoError  *\
+   22.40    479108.       1576.612   261903.2      16.653 0.003 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1314.470  267.370   13    stars.coo              13     \
+   1314.535   267.479    0.065   0.109   0.005   0.005          0    NoError   \
+   127.7222       8.649927       -3.587506      544    4        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     166700.8      99.08682   154045.2      17.229 0.003 0    NoError  *\
+   22.40    403456.9      1576.892   202052.8      16.934 0.004 0    NoError  * 
+aug02_afbs_ASASSN14dq-v1206.770  1496.220  14    stars.coo              14     \
+   1206.875   1496.473   0.104   0.253   0.006   0.004          0    NoError   \
+   127.6102       6.423666       0.9313166      556    4        0    NoError   \
+   120.           1.046567       5BesV                  18:48:57               \
+   5.60     217050.8      98.58452   204470.4      16.921 0.002 0    NoError  *\
+   22.40    473873.2      1576.34    272716.2      16.609 0.003 0    NoError  * 
